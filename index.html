@@ -5,7 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <link rel="stylesheet" type="text/css" href="INICIO.css">
-    <style>
+    <style>.menu-toggle {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Estilos responsive para celulares */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        background-color: #FF69B4;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 2em;
+    }
+
+    .header-img {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicios-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Servicios-1 {
+        width: 90%;
+    }
+
+    .productos-1 h4 {
+        font-size: 1.5em;
+    }
+
+    .btn-1 {
+        width: 80%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
         /* Estilos generales */
    body {
     font-family: Arial, sans-serif;
@@ -183,21 +265,30 @@ footer p {
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <p class="logo">COSMETIC'S YULISSA</p>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Inicio 📍</a></li>
-                    <li><a href="PRODUCTOS.html">Productos 🛒</a></li>
-                    
-                    <li><a href="CONTACTO.html">Contacto &#9742;</a></li>
-                    <li><a href="manualusuario.html">Manual de Usuario 👤​</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="container">
+        <p class="logo">COSMETIC'S YULISSA</p>
+
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul id="menu">
+                <li><a href="index.html">Inicio 📍</a></li>
+                <li><a href="PRODUCTOS.html">Productos 🛒</a></li>
+                <li><a href="CONTACTO.html">Contacto &#9742;</a></li>
+                <li><a href="manualusuario.html">Manual de Usuario 👤​</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+</script>
+
 
     
 <section class="header-content">
