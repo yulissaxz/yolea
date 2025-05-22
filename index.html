@@ -221,6 +221,33 @@ footer p {
         font-size: 0.9em;
     }
 }
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FF69B4;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+}
 
     </style>
 </head>
