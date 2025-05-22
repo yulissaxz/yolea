@@ -5,290 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <link rel="stylesheet" type="text/css" href="INICIO.css">
-    <style>.menu-toggle {
-    display: none;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    text-align: right;
-}
-
-/* Estilos responsive para celulares */
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        background-color: #FF69B4;
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px 0;
-    }
-
-    .navbar ul.show {
-        display: flex;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-text {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .header-text h1 {
-        font-size: 2em;
-    }
-
-    .header-img {
-        margin-top: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .servicios-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Servicios-1 {
-        width: 90%;
-    }
-
-    .productos-1 h4 {
-        font-size: 1.5em;
-    }
-
-    .btn-1 {
-        width: 80%;
-        padding: 12px;
-        font-size: 1em;
-    }
-
-    footer a {
-        font-size: 1em;
-    }
-
-    footer p {
-        font-size: 0.9em;
-    }
-}
-
+    <style>
         /* Estilos generales */
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #E6EBE0; 
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E6EBE0; 
+        }
 
-header {
-    background-color: #FF69B4; 
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background-color: #FF69B4; 
+            padding: 20px 0;
+            text-align: center;
+        }
 
-.logo {
-    font-size: 2em;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+        .logo {
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-.navbar ul li {
-    margin: 0 15px;
-}
+        .navbar ul li {
+            margin: 0 15px;
+        }
 
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
 
-.navbar ul li a:hover {
-    color: #fff8dc; 
-}
+        .navbar ul li a:hover {
+            color: #fff8dc; 
+        }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #FFB6C1; 
-    color: white;
-}
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #FFB6C1; 
+            color: white;
+        }
 
-.header-text {
-    max-width: 50%;
-}
+        .header-text {
+            max-width: 50%;
+        }
 
-.header-text h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+        .header-text h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
 
-.header-text p {
-    font-size: 1.1em;
-    line-height: 1.5;
-}
+        .header-text p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
 
-.header-img img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+        .header-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-.servicios-container {
-    padding: 50px 20px;
-    background-color: #FFF;
-    text-align: center;
-}
+        
+        .servicios-container {
+            padding: 50px 20px;
+            background-color: #FFF;
+            text-align: center;
+        }
 
-.servicios-container h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
+        .servicios-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
 
-.servicios-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+        .servicios-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.Servicios-1 {
-    width: 30%;
-    margin-bottom: 30px;
-}
+        .Servicios-1 {
+            width: 30%;
+            margin-bottom: 30px;
+        }
 
-.Servicios-1 img {
-    max-width: 100%;
-    border-radius: 8px;
-}
+        .Servicios-1 img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
-.Servicios-1 p {
-    font-size: 1.1em;
-    color: #333;
-}
+        .Servicios-1 p {
+            font-size: 1.1em;
+            color: #333;
+        }
 
-.productos-1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
+        
+        .productos-1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.productos-1 h4 {
-    font-size: 2em;
-    margin-bottom: 15px;
-}
+        .productos-1 h4 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
 
-.productos-1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+        .productos-1 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-.btn-1 {
-    display: inline-block;
-    background-color: #FF69B4;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-}
+        .btn-1 {
+            display: inline-block;
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
 
-.btn-1:hover {
-    background-color: #FF1493;
-}
+        .btn-1:hover {
+            background-color: #FF1493;
+        }
 
-footer {
-    background-color: #FF69B4;
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-}
+        
+        footer {
+            background-color: #FF69B4;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
 
-footer p {
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #FF69B4;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .navbar ul.show {
-        display: flex;
-    }
-}
-
+        footer p {
+            font-size: 1em;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
 <body>
-<header>
-    <div class="container">
-        <p class="logo">COSMETIC'S YULISSA</p>
-
-        <nav class="navbar">
-            <div class="menu-toggle" id="menu-toggle">☰</div>
-            <ul id="menu">
-                <li><a href="index.html">Inicio 📍</a></li>
-                <li><a href="PRODUCTOS.html">Productos 🛒</a></li>
-                <li><a href="CONTACTO.html">Contacto &#9742;</a></li>
-                <li><a href="manualusuario.html">Manual de Usuario 👤​</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    toggle.addEventListener('click', () => {
-        menu.classList.toggle('show');
-    });
-</script>
-
+    <header>
+        <div class="container">
+            <p class="logo">COSMETIC'S YULISSA</p>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio 📍</a></li>
+                    <li><a href="PRODUCTOS.html">Productos 🛒</a></li>
+                    
+                    <li><a href="CONTACTO.html">Contacto &#9742;</a></li>
+                    <li><a href="manualusuario.html">Manual de Usuario 👤​</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     
 <section class="header-content">
@@ -301,10 +192,11 @@ footer p {
             Aquí descubrirás una amplia variedad de marcas reconocidas y productos que se adaptan a todos los estilos, tonos de piel y ocasiones.
         </p>
         <p>
-            En <span class="highlight">COSMETIC'S YULISSA</span>
+            En <span class="highlight">COSMETIC'S YULISSA</span> creemos que cada persona merece sentirse bella y segura, por eso seleccionamos cuidadosamente 
+            cada producto para ofrecerte lo mejor en tendencias, durabilidad y pigmentación.
         </p>
         <p>
-         <span class="highlight"></span>
+            ✨ Vive la experiencia de maquillarte con amor, calidad y estilo. Porque <span class="highlight">tu belleza</span>, es nuestra inspiración. 💄
         </p>
     </div></p>
     </div>
